@@ -6,9 +6,29 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Akbar birbal site</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 4 ----------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery library End -->
 
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">
+
+
+<!--------------------------------------------------->
+<!------------------- INTERNAL CSS ------------------>
+<!--------------------------------------------------->
 <style>
 
    *{
@@ -16,10 +36,26 @@
    	margin: 0;
    	font-family: sans-serif;
    }
+
   /* Make the image fully responsive */
   .carousel-inner img {
     width: 100%;
     height: 100%;
+  }
+
+
+
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width:  30px;
+  height: 30px;
+  color: red;
+}
+
+  #id99 {
+    border: 4px double yellow ;
+    border-radius: 30px;
   }
   
   @media (max-width: 450px){
@@ -27,40 +63,85 @@
     width: 100%;
     height: 100%;
   }
-   
+  
    
    .number h3 {
-     width: 100%;
+    width: 100%;
     height: 100%;
     font-size: 30px;
   }
 }
+
+
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+   
+}
+
+
+
+
+
+
 </style>
 </head>
 
 
 <body>
-<!-------------Header-------------------->
 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>  WebSite Name: अकबर बीरबल कथा <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Made by: Ritesh Gorle      <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>    Created: January 2022       <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>      Content: Stories          <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Table Of Contents:
+
+SECTION 01: HEADER 
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 01: LOGO START    =------------------------------------->
+<!--------------------------------===============================------------------------------------->
 <header  >
-<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+<nav class="navbar navbar-expand-sm container-fluid" style="background-color: #f0e68c;">
   <!-- Brand -->
   <a class="navbar-brand" href="#"><img src="Bunty.png" alt="Logo" style="width:60px;"></a>
 
-  <h1  class="display-5  ">रितेश गोरले कथा</h1>
+  <h1  class="display-5" style="font-size:3vw;">अकबर बीरबल कथा</h1>
 
 
-<!-------------navigation Bar-------------------->
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=    SECTION 01: LOGO END     =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!----------------------------=  SECTION 02: NAVAIGATION BAR START  =--------------------------------->
+<!--------------------------------===============================------------------------------------->
   <!-- Links -->
   <ul class="navbar-nav ml-auto mr-4 pd " >
     <li class="nav-item ">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link text-dark" href="#"><strong>Home</strong></a>
     </li>
    
    <!-- Dropdown -->
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Stories
+      <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown">
+        <strong>Stories</strong>
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="Parrot.html">शाही पोपट!</a>
@@ -73,18 +154,18 @@
 
 
     <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
+      <a class="nav-link text-dark" href="https://riteshgorle.github.io/RG-Cat-Site/about.html"><strong>About</strong></a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link text-dark" href="https://riteshgorle.github.io/RG-Cat-Site/contact.html"><strong>Contact</strong></a>
     </li>
 
   </ul>
 
  <!-------------Search box-------------------->
  <div >
- 	 <form class="form-inline" action="/action_page.php">
+ 	 <form id="my-content" class="form-inline" action="index.html">
     <input class="form-control mr-sm-2" type="text" placeholder="Search">
     <button class="btn btn-success" type="submit">Search</button>
   </form>
@@ -92,9 +173,17 @@
  	
  </div>
 </nav>
+<!--------------------------------===============================------------------------------------->
+<!-------------------------------=   SECTION 02: NAVAIGATION BAR END   =------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-------------------------------=   SECTION 03: CAROUSEL START  =------------------------------------>
+<!--------------------------------===============================------------------------------------->
 
 <!-------------Slider images-------------------->
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide " data-ride="carousel">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -117,7 +206,7 @@
   </div>
 
   <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <a class="carousel-control-prev " href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon "></span>
   </a>
   <a class="carousel-control-next" href="#demo" data-slide="next">
@@ -127,8 +216,15 @@
 </div>
 
 </header>
+<!--------------------------------===============================------------------------------------->
+<!-------------------------------=   SECTION 03: CAROUSEL END    =------------------------------------>
+<!--------------------------------===============================------------------------------------->
 
-<!-------------image & Paragraph-------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=   SECTION 04: IMAGE & PARAGRAPH  START  =------------------------------->
+<!--------------------------------===============================------------------------------------->
 <section >
 
 	<div class="container-fluid text-center text-capitalize pt-5">
@@ -137,24 +233,26 @@
 
 		<div class="row mb-5">
 			<div class="col-lg-6 col-md-6 col-12" >
-				<img  src="Bunty Story.jpg" class="img-fluid">
-				
-			</div>
+				<img id="id99" src="Bunty Story.jpg" class="img-fluid">
+		</div>
 
-			<div class="col-lg-6 col-md-6 col-12">
-	<p >In this collection of stories, Birbal’s humor and wit Such interesting stories of opinions are included, that each of which The reader will laugh heartily.
-
-There is no doubt that the stories presented along with the entertainment will give a taste of intelligence and will facilitate the development of children’s intelligence.</p>
-
-	<button class="btn bg-danger text-white">Learn More</button>
-			
-
+		<div class="col-lg-6 col-md-6 col-12">
+	<p >In this collection of stories, Birbal’s humor and wit Such interesting stories of opinions are included, that each of which The reader will laugh heartily. There is no doubt that the stories presented along with the entertainment will give a taste of intelligence and will facilitate the development of children’s intelligence.
+  </p>
+  <p>प्रसिद्ध मुघल सम्राट, अकबर आणि त्याचा सल्लागार, बिरबल यांच्याबद्दल अनेक कथा अनेक वर्षांपासून फेऱ्या मारल्या गेल्या आहेत.अकबर आणि बिरबल यांच्या जीवनातील मनोरंजक आणि काहीवेळा मजेदार घटना ऐकून मुलांना आनंद होतो आणि म्हणूनच मुलांसाठी झोपण्याच्या वेळेस उत्तम कथा बनवतात. म्हणून आम्ही तुम्हाला सर्व संबंधित कथा सादर करत आहोत</p>
+   <a href="Parrot.html"><button class="btn bg-danger text-white">Learn More</button></a>
 		</div>
 		
 	</div>
 </section>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=   SECTION 04: IMAGE & PARAGRAPH  END  =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 
-<!-------------Best Stories-------------------->
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=    SECTION 05: BEST STORIES START     =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 <section >
 	
 	<div class="container text-center text-capitalize pt-5">
@@ -163,33 +261,33 @@ There is no doubt that the stories presented along with the entertainment will g
 
 		<div  class="row text-center">
 
-			<div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:300px">
-  <img class="card-img-top" src="Bunty2.jpg" alt="Card image">
+			<div class="col mb-2 bg-warning" align="center" style="border: 3px solid red; border-radius: 25px;">
+				<div class="card bg-danger" style="width:300px">
+  <img class="card-img-top" id="id99" src="Bunty2.jpg" alt="Card image">
   <div class="card-body">
-    <h4 class="card-title">युक्तीने चोर पकडला!</h4>
+    <h4 class="card-title" style="font-size:3vw;"><strong>युक्तीने चोर पकडला!</strong></h4>
     
     <a href="thief.html" class="btn btn-primary">See Story</a>
   </div>
 </div>
 </div>
 
-<div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:300px ">
-  <img class="card-img-top"   src="Bunty1.jpg" alt="Card image">
+<div class="col mb-2 bg-warning" align="center" style="border: 3px solid red; border-radius: 25px;">
+				<div class="card bg-danger" style="width:300px ">
+  <img class="card-img-top" id="id99"  src="Bunty1.jpg" alt="Card image">
   <div class="card-body">
-    <h4 class="card-title">शाही पोपट!</h4>
+    <h4 class="card-title" style="font-size:3vw;"><strong>शाही <br> पोपट!</strong></h4>
     
     <a href="Parrot.html" class="btn btn-primary">See Story</a>
   </div>
 </div>
 </div>
 
-<div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:300px">
-  <img class="card-img-top" src="Bunty4.jpg" alt="Card image">
+<div class="col bg-warning" align="center" style="border: 3px solid red; border-radius: 25px;">
+				<div class="card bg-danger" style="width:300px">
+  <img class="card-img-top" id="id99" src="Bunty4.jpg" alt="Card image">
   <div class="card-body">
-    <h4 class="card-title">शेणाने अंगठी काढली!</h4>
+    <h4 class="card-title" style="font-size:3vw;"><strong>शेणाने अंगठी काढली!</strong></h4>
     
     <a href="ring.html" class="btn btn-primary">See Story</a>
   </div>
@@ -199,34 +297,41 @@ There is no doubt that the stories presented along with the entertainment will g
 </div>
 </section>
 <br>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=    SECTION 05: BEST STORIES END     =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 
-<!-------------Contact-------------------->
-<section class="bg-success mb-5 ">
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=       SECTION 06: CONTACT START       =--------------------------------->
+<!--------------------------------===============================------------------------------------->
+<section class="bg-success mb-5 container" id="id99">
 	
 <article class="text-center py-5 " >
 		<div class="number">
-		<h3  class="display-4">+91 1234567890</h3>
-		<p>“Happy to help!”</p>
-		<button class=" text-white btn-primary">Contact now</button>
+    <h3   style="font-size:3vw;">This website is made by Ritesh Gorle</h3>
+		<h3   style="font-size:6vw;">+91 8983724975</h3>
+		<p><strong>“Happy to help!”</strong></p>
+    <a href="https://riteshgorle.github.io/RG-Cat-Site/contact.html"><button class="text-white btn-lg btn-primary">Contact now</button></a>
 		
 	</div>
 </article>
 </section>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=       SECTION 06: CONATCT END      =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 
-<!-------------Footer-------------------->
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=          SECTION 07: FOOTER START     =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 <footer>
-	<p class="text-center bg-dark text-white">copyright© RiteshGorleStories.com</p>
+	<p class="text-center bg-dark text-white">copyright ©2022 अकबर बीरबल कथा.com</p>
 </footer>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------=          SECTION 07: FOOTER START     =--------------------------------->
+<!--------------------------------===============================------------------------------------->
 
 
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<!-- jQuery library End -->
 </body>
 </html>
